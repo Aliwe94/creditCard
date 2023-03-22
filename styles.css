@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* FONT */
+    --font: font-family: 'Space Grotesk', sans-serif;
+    --font-size-18: 18px;
+
+    /* COLORS */
+    /* Primary */
+
+    --gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --red: hsl(0, 100%, 66%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-violet: hsl(270, 3%, 87%);
+    --dark-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
