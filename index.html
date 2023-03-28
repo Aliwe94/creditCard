@@ -31,40 +31,47 @@
 <body>
 
   <main>
-    <section>
-      <div>
-        <img src="" alt="">
-        <p>0000 0000 0000 0000</p>
-        <p>Jane Appleseed</p>
-        <p>00/00</p>
-      </div>
-      <div>
-        <img src="" alt="">
-        <p>000</p>
-      </div>
-    </section>
-
-    <section>
-      <form action="">
-        <div>
-          <label for="name">Cardholder Name</label>
-          <input type="text" id="name" placeholder="e.g. Jane Appleseed">
-          <label for="number">Card Number</label>
-          <input type="text" id="number" placeholder="e.g. 1234 5678 9123 0000">
-
-          <div>
-            <label for="month">Exp. Date (MM/YY)</label>
-            <input type="text" id="month" placeholder="MM">
-            <input type="text" id="year" placeholder="YY">
-
-            <label for="cvc">CVC</label>
-            <input type="text" id="cvc" placeholder="e.g. 123">
+    <div class="wrapper">
+      <div class="layout__grid">
+        <section>
+          <div class="card__front">
+            <img src="images/bg-card-front.png" alt="">
+            <span class="card__number">0000 0000 0000 0000</span>
+            <span class="card__name">Jane Appleseed</span>
+            <span class="card__expdate">00/00</span>
           </div>
+          <div class="card__back">
+            <img src="images/bg-card-back.png" alt="">
+            <span class="card__cvc">000</span>
+          </div>
+        </section>
 
-          <button type="submit">Confirm</button>
-        </div>
-      </form>
-    </section>
+        <section>
+          <form action="" class="form">
+            <div>
+              <label for="name">Cardholder Name</label>
+              <input type="text" id="name" placeholder="e.g. Jane Appleseed">
+            </div>
+            <div>
+              <label for="number">Card Number</label>
+              <input type="text" id="number" placeholder="e.g. 1234 5678 9123 0000">
+            </div>
+
+            <div class="form__expdate__labels">
+              <label for="month">Exp. Date (MM/YY)</label>
+              <label for="cvc">CVC</label>
+            </div>
+            <div class="form__expdate__inputs">
+              <input type="text" id="month" placeholder="MM">
+              <input type="text" id="year" placeholder="YY">
+              <input type="text" id="cvc" placeholder="e.g. 123">
+            </div>
+
+            <button type="submit">Confirm</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </main>
 
 
@@ -74,10 +81,10 @@
   We've added your card details
   Continue
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>
