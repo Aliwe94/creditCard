@@ -25,13 +25,25 @@
 .wrapper {
     max-width: 1110px;
     margin-inline: auto;
-    outline: 1px solid red;
 }
 
 .layout__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    align-items: center;
+    outline: 1px solid red;
+    height: 100vh;
+    column-gap: 8rem;
+    justify-content: space-between;
+  
+
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 510px;
 }
 
 .card__front {
@@ -49,6 +61,7 @@
 .card__name {
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
 .card__expdate {
@@ -61,6 +74,7 @@
     position: relative;
     width: 447px;
     height: 245px;
+    align-self: end;
 }
 
 .card__cvc {
@@ -73,7 +87,11 @@
 .form {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    width: 90%;
+}
+
+.form input{
+    width: 100%;
 }
 
 .form__expdate__labels {
@@ -82,4 +100,5 @@
 
 .form__expdate__inputs {
     display: flex;
+    width: 25%;
 }
